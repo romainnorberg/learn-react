@@ -1,14 +1,22 @@
-import logo from './logo.svg';
-import { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 import { LogoIcon } from '@pancakeswap-libs/uikit'
 import './App.css';
+
+const StyledNotFound = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 152px);
+  justify-content: center;
+  text-align: center;
+`
 
 function App() {
   return (
     <div className="App">
-      <div style={{ padding: "32px", width: "400px" }}>
-        <LogoIcon />
-      </div>
+          <StyledNotFound>
+              <LogoIcon width="64px" mb="8px" />
+          </StyledNotFound>
     </div>
   );
 }
